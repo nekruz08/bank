@@ -6,8 +6,18 @@ type Money int64
 // Currency представляет код валюты
 type Currency string
 
-// Category ...
+// Category представляет собой категорию, в которой был совершён (авто, аптеки, рестораны и т.д.).
 type Category string
+
+// Status представляет собой статус платежа
+type Status string
+
+// Предопределённые статусы платежей.
+const (
+	StatusOk Status = "OK"
+	StatusFail Status = "FAIL"
+	StatusInProgress Status = "INPROGRESS"
+)
 
 // Коды валют
 const (
