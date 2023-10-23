@@ -6,6 +6,9 @@ type Money int64
 // Currency представляет код валюты
 type Currency string
 
+// Category ...
+type Category string
+
 // Коды валют
 const (
 	TJS Currency = "TJS"
@@ -33,6 +36,7 @@ type Card struct{
 type Payment struct{
 	ID int
 	Amount Money
+	Category Category
 }
 
 type PaymentSource struct{
